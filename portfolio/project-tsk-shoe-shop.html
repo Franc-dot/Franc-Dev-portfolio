@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSK Shoe Shop - E-commerce Project | Franc DEV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Project Page Specific Styles */
+        *{
+            color: #333;
+        }
+        nav a{
+            color: #333;
+        }
+        nav h1{
+            color: #333;
+        }
+        .project-page {
+            max-width: 1200px;
+            margin: 100px auto 50px;
+            padding: 0 20px;
+        }
+        
+        .project-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .project-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .project-badge {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        
+        .project-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .project-info {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin: 40px 0;
+        }
+        
+        .project-description h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .project-description p {
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .tech-stack {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .tech-stack h3 {
+            margin-bottom: 15px;
+        }
+        
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .tech-tag {
+            background: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #007bff;
+            border: 1px solid #007bff;
+        }
+        
+        .project-links {
+            margin: 30px 0;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .btn-live {
+            background: #28a745;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+        }
+        
+        .btn-live:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
+        
+        .btn-github {
+            background: #333;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+        }
+        
+        .btn-github:hover {
+            background: #555;
+        }
+        
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .features-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .features-list li i {
+            color: #28a745;
+            width: 20px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-top: 40px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .back-button:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .project-info {
+                grid-template-columns: 1fr;
+            }
+            
+            .project-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: #f8f9fa;">
+
+<!-- Navigation -->
+<nav>
+    <h1>Franc DEV</h1>
+    <div class="right-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+</nav>
+
+<div class="project-page">
+    <div class="project-header">
+        <span class="project-badge"><i class="fas fa-shopping-cart"></i> Healthcare services  </span>
+        <h1>citycare Healthcare Services</h1>
+        <p>Modern Healthcare platform with seamless appointment booking system</p>
+    </div>
+    
+    <img src="images/chrome_nGFWVz4Pzx.png" alt="citycare Healthcare Services" class="project-image">
+    
+    <div class="project-info">
+        <div class="project-description">
+            <h2>About The Project</h2>
+            <p>citycare Healthcare Services is a fully functional healthcare platform designed specifically for the Kenyan market. The platform allows patients to book appointments, view medical records, and communicate with healthcare providers. The system automatically generates appointment confirmations and sends SMS notifications.</p>
+            
+            <p>Built with modern web technologies, the website is mobile-responsive and optimized for fast loading on Kenyan 3G/4G networks. The admin dashboard provides real-time appointment management, patient tracking, and reporting.</p>
+            
+            <h2>Key Features</h2>
+            <ul class="features-list">
+                <li><i class="fas fa-check-circle"></i> Admin dashboard for appointment management</li>
+                <li><i class="fas fa-check-circle"></i> Automatic email/SMS appointment confirmation</li>
+                <li><i class="fas fa-check-circle"></i> Mobile-responsive design</li>
+                <li><i class="fas fa-check-circle"></i> Patient tracking and reporting</li>
+            </ul>
+        </div>
+        
+        <div class="tech-stack">
+            <h3><i class="fas fa-code"></i> Tech Stack</h3>
+            <div class="tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+            </div>
+            
+            <h3 style="margin-top: 25px;"><i class="fas fa-clock"></i> Project Duration</h3>
+            <p>4 weeks</p>
+            
+            <h3><i class="fas fa-users"></i> Client</h3>
+            <p>citycare clinic, Nairobi CBD</p>
+            
+            <h3><i class="fas fa-chart-line"></i> Results</h3>
+            <p>✅ 40% increase in online appointments<br>
+            ✅ 20+ monthly active users<br>
+            <p>✅ Positive feedback from patients and staff</p>
+        </div>
+    </div>
+    
+    <div class="project-links">
+        <a href="https://citycare-clinic.page.gd/index.php" class="btn-live" target="_blank">
+            <i class="fas fa-external-link-alt"></i> View Live Project
+        </a>
+        <a href="https://github.com/Franc-dot/city-care-clinic" class="btn-github" target="_blank">
+            <i class="fab fa-github"></i> View Source Code
+        </a>
+    </div>
+    
+    <a href="index.html#projects" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Projects
+    </a>
+</div>
+
+<footer style="margin-top: 60px;">
+    <p>© 2026 Franc DEV | <i class="fas fa-check-circle"></i> Kenya Based Developer</p>
+</footer>
+
+</body>
+</html>

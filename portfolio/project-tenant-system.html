@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenant Management System - Property Management | Franc DEV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Use same styles as project page 1 */
+          *{
+            color: #333;
+            background: #fff;
+        }
+        nav a{
+            color: #333;
+        }
+        nav h1{
+            color: #333;
+        }
+        .project-page {
+            max-width: 1200px;
+            margin: 100px auto 50px;
+            padding: 0 20px;
+        }
+        
+        .project-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .project-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .project-badge {
+            display: inline-block;
+            background: #6c757d;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        
+        .project-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        
+        .project-info {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin: 40px 0;
+        }
+        
+        .project-description h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .project-description p {
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .tech-stack {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .tech-tag {
+            background: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #007bff;
+            border: 1px solid #007bff;
+        }
+        
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .features-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .features-list li i {
+            color: #28a745;
+            width: 20px;
+        }
+        
+        .project-links {
+            margin: 30px 0;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .btn-live {
+            background: #28a745;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-top: 40px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .project-info {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h1>Franc DEV</h1>
+    <div class="right-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+</nav>
+
+<div class="project-page">
+    <div class="project-header">
+        <span class="project-badge"><i class="fas fa-building"></i> Property Management</span>
+        <h1>Tenant Management System</h1>
+        <p>Complete property management solution for landlords and agents</p>
+    </div>
+    
+    <img src="images/system.jfif" alt="Tenant Management System" class="project-image">
+    
+    <div class="project-info">
+        <div class="project-description">
+            <h2>About The Project</h2>
+            <p>This Tenant Management System is a comprehensive web-based solution designed for landlords, property managers, and real estate agents. It streamlines all aspects of property management including tenant tracking, rent collection, maintenance requests, and financial reporting.</p>
+            
+            <p>The system features automated M-Pesa payment tracking, where tenants can pay rent via STK Push and the system automatically updates their payment status. Property owners can access real-time dashboards showing occupancy rates, expected rent, and payment history.</p>
+            
+            <h2>Key Features</h2>
+            <ul class="features-list">
+                <li><i class="fas fa-check-circle"></i> Tenant and property registration</li>
+                <li><i class="fas fa-check-circle"></i> Automated rent collection with M-Pesa</li>
+                <li><i class="fas fa-check-circle"></i> Lease agreement management</li>
+                <li><i class="fas fa-check-circle"></i> Maintenance request tracking</li>
+                <li><i class="fas fa-check-circle"></i> Payment history and receipts</li>
+                <li><i class="fas fa-check-circle"></i> Automated rent reminders via SMS</li>
+                <li><i class="fas fa-check-circle"></i> Financial reports and analytics</li>
+                <li><i class="fas fa-check-circle"></i> Role-based access (Admin, Landlord, Tenant)</li>
+            </ul>
+        </div>
+        
+        <div class="tech-stack">
+            <h3><i class="fas fa-code"></i> Tech Stack</h3>
+            <div class="tech-tags">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">M-Pesa API</span>
+                <span class="tech-tag">Chart.js</span>
+            </div>
+            
+            <h3 style="margin-top: 25px;"><i class="fas fa-clock"></i> Project Duration</h3>
+            <p>6 weeks</p>
+            
+            <h3><i class="fas fa-users"></i> Client</h3>
+            <p>Property Management Company (50+ units)</p>
+            
+            <h3><i class="fas fa-chart-line"></i> Results</h3>
+            <p>✅ Reduced rent collection time by 70%<br>
+            ✅ 95% on-time rent payments<br>
+            ✅ Automated 200+ payment reminders monthly</p>
+        </div>
+    </div>
+    
+    <div class="project-links">
+        <a href="#" class="btn-live" target="_blank">
+            <i class="fas fa-external-link-alt"></i> View Live Demo
+        </a>
+    </div>
+    
+    <a href="index.html#projects" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Projects
+    </a>
+</div>
+
+<footer style="margin-top: 60px;">
+    <p>© 2024 Franc DEV | <i class="fas fa-check-circle"></i> Kenya Based Developer</p>
+</footer>
+
+</body>
+</html>
